@@ -1,0 +1,99 @@
+
+body { /* styling for whole page */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  
+  .container { /* box containing application in center */
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+    .task-input { /* box for task input */
+    margin-bottom: 20px;
+  }
+  
+  
+  .task-input input { /* text input bit */
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  
+  #categorySelect { /* dropdown from category selector */
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  .task-input button { /* button to add a task */
+    background: green;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .task-input button:hover { /* button goes darker to give illusion of being pressed in */
+    background: darkgreen;
+  }
+  
+ 
+  ul { /* keeps list simple */
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  ul li { /* styling for each element in list, as new li's are created from each task, ul expands to accomodate the children elements (li's) */
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+ 
+  .completed { /* when marked as complete, line goes through text */
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+ 
+  .deleteButton { /* delete button */
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    float: right;
+  }
+  
+  .deleteButton:hover {  /* makes delete button darker when you hover */
+    background: darkred;
+  }
+  
+  
+  #clearButton, #sortButton, #filterButton, #saveButton, #loadButton { /* main function buttons */
+    margin: 5px;
+    padding: 5px;
+    background: goldenrod;
+    color: white;
+    border-radius: 5px;
+  }
+
+  #clearButton:hover, #sortButton:hover, #filterButton:hover, #saveButton:hover, #loadButton:hover {
+    background: #B8860B;
+  }
