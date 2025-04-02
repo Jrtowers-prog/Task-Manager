@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jamie's Task Manager</title> 
+    <link rel="stylesheet" href="taskmanager.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jamie's Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="taskEnter" placeholder="Enter a new task">
+            <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="university">University</option>
+            </select>
+            <button id="addButton">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div>
+            <button id="clearButton">Clear All</button>
+            <button id="sortButton">Sort A-Z</button>
+            <button id="filterButton">Filter</button>
+        </div>
+        <div class="file-actions">
+            <button id="saveButton">Save to File</button>
+            <input type="file" id="fileInput" hidden>
+            <button id="loadButton">Load from File</button>
+        </div>
+    </div>
+    <script src="taskmanager.js"></script>
+</body>
+</html>
